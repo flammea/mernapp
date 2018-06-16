@@ -1,1 +1,9 @@
 /* Home styles */
+
+h2 {
+    font-size: 28px;
+    margin-top: 20px;
+    font-weight: 400;
+    color: #616161;
+    text-align: center;
+}
