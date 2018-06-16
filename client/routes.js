@@ -20,6 +20,12 @@ if (process.env.NODE_ENV !== 'production') {
   require('./modules/Post/pages/PostDetailPage/PostDetailPage');
 }
 
+if (process.env.NODE_ENV !== 'production') {
+  require('./modules/Post/pages/PostListPage/PostListPage');
+  require('./modules/Post/pages/PostDetailPage/PostDetailPage');
+  require('./modules/Home/Home');
+}
+
 // react-router setup with code-splitting
 // More info: http://blog.mxstbr.com/2016/01/react-apps-with-pages/
 export default (
@@ -39,5 +45,13 @@ export default (
         });
       }}
     />
+    <Route
+	  path="/home"
+	  getComponent={(nextState, cb) => {
+	    require.ensure([], require => {
+	      cb(null, require('./modules/Home/Home').default);
+	    });
+	  }}
+	/>
   </Route>
 );
