@@ -4,6 +4,8 @@ import { FormattedMessage } from 'react-intl';
 
 // Import Style
 import styles from './Header.css';
+import Nav from '../Nav/nav';
+
 
 export function Header(props, context) {
   const languageNodes = props.intl.enabledLanguages.map(
@@ -12,6 +14,7 @@ export function Header(props, context) {
 
   return (
     <div className={styles.header}>
+      <Nav/>
       <div className={styles['language-switcher']}>
         <ul>
           <li><FormattedMessage id="switchLanguage" /></li>
