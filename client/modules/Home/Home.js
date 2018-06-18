@@ -8,8 +8,11 @@ import styles from './Home.css';
 class Home extends Component {
   render() {
     return (
-      <div>
-        <h2 className={styles.Home}>Hello world!</h2>
+      <div className={styles.Home}>
+        <h1>Mern App</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      </p>
       </div>
     );
   }

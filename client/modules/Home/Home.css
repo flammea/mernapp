@@ -1,9 +1,16 @@
 /* Home styles */
 
-h2 {
+.Home h1{
     font-size: 28px;
-    margin-top: 20px;
+    margin-top: 50px;
     font-weight: 400;
     color: #616161;
     text-align: center;
+}
+
+.Home p{
+    font-size: 14px;
+    color: #888;
+    text-align: left;
+    margin-top: 20px;
 }
