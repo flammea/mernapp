@@ -48,7 +48,7 @@ export default (
           cb(null, require('./modules/About/About').default);
         });
       }}
-    />  
+    />	
     <Route
       path="/posts/:slug-:cuid"
       getComponent={(nextState, cb) => {

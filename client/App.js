@@ -14,6 +14,7 @@ require('./main.css');
 
 export default function App(props) {
   return (
+  	<div>
     <Provider store={props.store}>
       <IntlWrapper>
         <Router history={browserHistory}>
@@ -21,6 +22,7 @@ export default function App(props) {
         </Router>
       </IntlWrapper>
     </Provider>
+    </div>
   );
 }
 
